@@ -1,0 +1,7 @@
+- [x] Create upload to aws s3 main feature
+- [x] Update the version of aws-sdk to v3
+- [ ] Abort current upload feature
+- [ ] Pause upload feature
+- [ ] Resume upload feature
+- [ ] Add UI to show the upload progress
+- [ ] convert the XMLHttpRequest into fetch api format

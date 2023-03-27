@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  localstack:
+    container_name: "${LOCALSTACK_DOCKER_NAME-localstack_main}"
+    image: localstack/localstack
+    ports:
+      - "127.0.0.1:4566:4566" # LocalStack Gateway
+      - "127.0.0.1:4510-4559:4510-4559" # external services port range
+    env_file:
+      - ./.env
+    environment:
+      - DEBUG=${DEBUG-}
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "${LOCALSTACK_VOLUME_DIR:-./volume}:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./config:/opt/cors-config"
+
+  setup_localstack:
+    image: amazon/aws-cli
+    depends_on:
+      - localstack
+    env_file:
+      - ./.env
+    entrypoint: >
+      sh -c "
+        yum install -y nc && \
+        while ! nc -z localstack 4566;
+        do
+          echo 'Waiting for LocalStack...';
+          sleep 1;
+        done;
+        aws --endpoint-url=http://localstack:4566 s3 mb s3://${AWS_BUCKET} &&
+        aws --endpoint-url=http://localstack:4566 s3api put-bucket-cors --bucket ${AWS_BUCKET} --cors-configuration file:///opt/cors-config/cors.json
+      "
+    volumes:
+      - "./config:/opt/cors-config"

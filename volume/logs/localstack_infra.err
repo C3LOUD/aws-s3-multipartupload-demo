@@ -1,0 +1,52 @@
+2023-03-27T04:02:30.211  WARN --- [-functhread3] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-03-27T04:02:30.211  WARN --- [-functhread3] hypercorn.error            : ASGI Framework Lifespan error, continuing without Lifespan support
+2023-03-27T04:02:30.214  INFO --- [-functhread3] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-03-27T04:02:30.214  INFO --- [-functhread3] hypercorn.error            : Running on https://0.0.0.0:4566 (CTRL + C to quit)
+2023-03-27T04:02:48.497  INFO --- [functhread12] l.services.motoserver      : starting moto server on http://0.0.0.0:59853
+2023-03-27T04:02:48.505  INFO --- [   asgi_gw_0] localstack.services.infra  : Starting mock S3 service on http port 4566 ...
+2023-03-27T04:02:48.637  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.CreateBucket => 200
+2023-03-27T04:02:49.073  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.PutBucketCors => 200
+2023-03-27T04:03:26.319  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListObjects => 200
+2023-03-27T04:04:00.262  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.CreateMultipartUpload => 200
+2023-03-27T04:04:00.451  WARN --- [   asgi_gw_1] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.460  WARN --- [   asgi_gw_2] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.464  WARN --- [   asgi_gw_4] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.466  WARN --- [   asgi_gw_3] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.469  WARN --- [   asgi_gw_0] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.473  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.474  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.480  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.480  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.484  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.513  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:00.544  WARN --- [   asgi_gw_1] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.550  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.820  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:00.830  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:00.840  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:00.849  WARN --- [   asgi_gw_2] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.862  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.865  WARN --- [   asgi_gw_3] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.872  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.877  WARN --- [   asgi_gw_4] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.879  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:00.890  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:00.906  WARN --- [   asgi_gw_0] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:00.911  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:01.000  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.017  WARN --- [   asgi_gw_1] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:01.027  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:01.276  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.299  WARN --- [   asgi_gw_5] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:01.305  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:01.331  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.338  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.355  INFO --- [   asgi_gw_0] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.363  WARN --- [   asgi_gw_5] l.services.s3.s3_utils     : Signatures do not match, but not raising an error, as S3_SKIP_SIGNATURE_VALIDATION=1
+2023-03-27T04:04:01.374  INFO --- [   asgi_gw_5] localstack.request.aws     : AWS s3.ListParts => 200
+2023-03-27T04:04:01.402  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.485  INFO --- [   asgi_gw_2] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.550  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.UploadPart => 200
+2023-03-27T04:04:01.847  INFO --- [   asgi_gw_4] localstack.request.aws     : AWS s3.CompleteMultipartUpload => 200
+2023-03-27T04:04:33.991  INFO --- [   asgi_gw_1] localstack.request.aws     : AWS s3.ListObjects => 200
+2023-03-27T04:04:37.165  INFO --- [   asgi_gw_3] localstack.request.aws     : AWS s3.GetObject => 200
